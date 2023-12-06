@@ -20,6 +20,7 @@
 
 const inpuBox = document.getElementById("input-box");
 const ul = document.getElementById("list-container");
+const Delete = document.getElementById("Delete");
 
 
 
@@ -51,8 +52,8 @@ ul.addEventListener("click", function(e){
     else if(e.target.tagName === "SPAN"){
         e.target. parentElement. remove();
         saveData();
-
     }
+
 } ,false);
 
 function saveData(){
